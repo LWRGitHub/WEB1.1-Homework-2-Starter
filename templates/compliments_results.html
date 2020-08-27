@@ -4,11 +4,14 @@
         <title>Compliments Results</title>
     </head>
     <body>
-        <!-- Your HTML code goes here! -->
-
-        
-
-        
+        <p>Greettings {{name}} you are...</p>
+        {% if num != 0 and compliments == 'yes' %}
+            <ul>
+            {% for x in listCompliments %}
+                <li>{{x}}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
         
     </body>
 </html>
